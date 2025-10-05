@@ -34,7 +34,7 @@ public static class MovieMapping
         {
             Id = movie.Id,
             Title = movie.Title,
-            GenreId = movie.GenreId, /* Name - we need string; ! - if sure won't be null */
+            GenreId = movie.GenreId, /* ! - if sure won't be null */
             Rating = movie.Rating,
             ReleaseYear = movie.ReleaseYear
         };

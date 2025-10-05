@@ -10,8 +10,8 @@ using Movies.Api.Data;
 namespace Movies.Api.Data.Migrations
 {
     [DbContext(typeof(MoviesContext))]
-    [Migration("20250926114450_SeedGenres")]
-    partial class SeedGenres
+    [Migration("20251005160438_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,23 +32,6 @@ namespace Movies.Api.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Genres");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Sci-Fi"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Action"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Drama"
-                        });
                 });
 
             modelBuilder.Entity("Movies.Api.Entities.Movie", b =>
