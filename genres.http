@@ -1,0 +1,26 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+### get all genres
+GET http://localhost:5032/genres
+
+### get genre by id
+GET http://localhost:5032/genres/4
+
+### create genre
+POST http://localhost:5032/genres
+Content-Type: application/json
+
+{
+    "name": "Sports"
+}
+
+### update genre
+PUT http://localhost:5032/genres/8
+Content-Type: application/json
+
+{
+    "name": "Simulation"
+}
+
+### delete genre
+DELETE http://localhost:5032/genres/8

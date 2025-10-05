@@ -1,0 +1,32 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+### get all movies
+GET http://localhost:5032/movies
+
+### get movie by id
+GET http://localhost:5032/movies/1
+
+### create a new movie
+POST http://localhost:5032/movies
+Content-Type: application/json
+
+{
+  "title": "Avengers Endgame",
+  "genreId": 6,
+  "rating":  8.9,
+  "releaseYear": 2019
+}
+
+### update movie
+PUT http://localhost:5032/movies/1
+Content-Type: application/json
+
+{
+  "title": "Avengers: Endgame",
+  "genreId": 3,
+  "rating": 9.3,
+  "releaseYear": 2019
+}
+
+### delete a movie
+DELETE http://localhost:5032/movies/2
